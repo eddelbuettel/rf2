@@ -40,9 +40,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
+    <!-- <link rel="canonical" href="http://www.rinfinance.com/altindex.html"> -->
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -86,27 +84,46 @@
       </header>
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
+          <style>
+          .demo-card-wide.mdl-card {
+             width: 1024px;
+             <!-- from 512px -->
+          }
+          .demo-card-wide > .mdl-card__title {
+             color: #fff;
+             height: 176px;
+             background: url('http://instinctmagazine.com/sites/instinctmagazine.com/files/images/blog_posts/Adam%20Dupuis/2016/10/24/CN_chicagosunset.jpg') center / cover;
+          }
+          .demo-card-wide > .mdl-card__menu {
+             color: #fff;
+          }
+          </style>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <!-- <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white"> -->
-            <!--   <i class="material-icons">play_circle_filled</i> -->
-            <!-- </header> -->
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Applied Finance with R</h4>
-                From the inaugural 2009 conference, R/Finance has set out to become the primary meeting for academics and practioners interested in using R in Finance..
-              </div>
-              <!-- <div class="mdl-card__actions"> -->
-              <!--   <a href="#program" class="mdl-button">More about the Program</a> -->
-              <!-- </div> -->
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Welcome</h2>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
+            <div class="mdl-card__supporting-text">
+                <h4>Applied Finance with R</h4>
+                From the inaugural conference in 2009, the annual R/Finance conference in Chicago has become the primary meeting for academics and practioners interested in using R in Finance.
+
+                <p></p>
+                
+                Participants from academia and industry mingle for two days to exchange ideas about current research, best practices and applications. A single-track program
+                permits continued focus on a series of refereed submissions. A lively social program rounds out the event.
+                
+            </div>
+            <!-- <div class="mdl-card__actions mdl-card--border"> -->
+            <!--   <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> -->
+            <!--   Get Started -->
+            <!--   </a> -->
+            <!-- </div> -->
+            <!-- <div class="mdl-card__menu"> -->
+            <!--   <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"> -->
+            <!--   <i class="material-icons">share</i> -->
+            <!--   </button> -->
+            <!-- </div> -->
+            </div>
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -118,7 +135,7 @@
                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
                   <h5>Keynotes</h5>
                   From renowned industry practioners to key R developers to leading academics, the conference has consistently feature keynote speakers who engaged the
-                  audience -- more details at the <a href="#program">Program</a> link.
+                  audience -- more details at the <em>Program</em> tab.
                 </div>
                 <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   <div class="section__circle-container__circle mdl-color--primary"></div>
@@ -139,14 +156,14 @@
               <!--   <a href="#" class="mdl-button">Read our features</a> -->
               <!-- </div> -->
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
+            <!-- <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2"> -->
+            <!--   <i class="material-icons">more_vert</i> -->
+            <!-- </button> -->
+            <!-- <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2"> -->
+            <!--   <li class="mdl-menu__item">Lorem</li> -->
+            <!--   <li class="mdl-menu__item" disabled>Ipsum</li> -->
+            <!--   <li class="mdl-menu__item">Dolor</li> -->
+            <!-- </ul> -->
           </section>
           <!-- <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"> -->
           <!--   <div class="mdl-card mdl-cell mdl-cell--12-col"> -->
@@ -188,9 +205,7 @@
         <div class="mdl-layout__tab-panel" id="program">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
-              <h4>Program</h4>
-
-              <b>This is a stub which shows last year's program</b>
+              <b>Note that this page is currently stub which shows last year's program.</b>
 
               <!-- <ul class="toc"> -->
               <!--   <h4>Contents</h4> -->
@@ -441,60 +456,69 @@
         
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
+            <!-- <div class="mdl-mega-footer--drop-down-section"> -->
+            <!--   <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked> -->
+            <!--   <h1 class="mdl-mega-footer--heading">Site</h1> -->
+            <!--   <ul class="mdl-mega-footer--link-list"> -->
+            <!--     <li><a href="#program">Program</a></li> -->
+            <!--     <li><a href="#registration">Registration</a></li> -->
+            <!--     <li><a href="#travel">Travel</a></li> -->
+            <!--     <li><a href="#faq">FAQ</a></li> -->
+            <!--   </ul> -->
+            <!-- </div> -->
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
+              <h1 class="mdl-mega-footer--heading">Platinum Sponsors</h1>
               <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
+                <li><a href="http://www.microsoft.com">Microsoft</a></li>
+                <li><a href="http://business.uic.edu/home-uic-business/prospective-students/liautaud-programs/master-of-science-in-finance">UIC MSF</a></li>
+                <li><a href="http://depts.washington.edu/compfin">UW CF&RM</a></li>
               </ul>
             </div>
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Details</h1>
+              <h1 class="mdl-mega-footer--heading">Gold Sponsors</h1>
               <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
+                <li><a href="https://www.schwab.com">Charles Schwab</a></li>
+                <li><a href="https://www.dominodatalab.com/">Domino Data Labs</a></li>
+                <li><a href="http://www.hullinvest.com/HI">Hull Investments</a></li>
+                <li><a href="https://www.interactivebrokers.com/mkt/?src=rf1">Interactive Brokers</a></li>
               </ul>
             </div>
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Technology</h1>
+              <h1 class="mdl-mega-footer--heading">&nbsp; &nbsp;</h1>
               <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Patterns</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contracts</a></li>
+                <li><a href="http://www.onetick.com/">OneTick</a></li>
+                <li><a href="http://www.paradigm4.com/">Paradigm4</li>
+                <li><a href="https://www.rstudio.org/">RStudio</li>
+                <li><a href="https://www.williamblair.com/">William Blair</li>
               </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
+            </div>            
+            <!-- <div class="mdl-mega-footer--drop-down-section"> -->
+            <!--   <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked> -->
+            <!--   <h1 class="mdl-mega-footer--heading">FAQ</h1> -->
+            <!--   <\!-- <ul class="mdl-mega-footer--link-list"> -\-> -->
+            <!--   <\!--   <li><a href="#">Questions</a></li> -\-> -->
+            <!--   <\!--   <li><a href="#">Answers</a></li> -\-> -->
+            <!--   <\!--   <li><a href="#">Contact us</a></li> -\-> -->
+            <!--   <\!-- </ul> -\-> -->
+            <!-- </div> -->
           </div>
           <div class="mdl-mega-footer--bottom-section">
             <div class="mdl-logo">
-              More Information
+              Crafted using 
             </div>
             <ul class="mdl-mega-footer--link-list">
-              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="https://getmdl.io/">Material Design Lite</a></li>
+              <!-- <li><a href="#">Help</a></li> -->
+              <!-- <li><a href="#">Privacy and Terms</a></li> -->
             </ul>
           </div>
         </footer>
       </main>
     </div>
     <!-- <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a> -->
-    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
