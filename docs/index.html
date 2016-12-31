@@ -72,27 +72,27 @@
           <a href="#program"      class="mdl-layout__tab">Program</a>
           <a href="#cfp"          class="mdl-layout__tab">CFP</a>
           <a href="#registration" class="mdl-layout__tab">Registration</a>
-          <a href="#travel"       class="mdl-layout__tab">Travel</a>
+          <!-- <a href="#travel"       class="mdl-layout__tab">Travel</a> -->
         </div>
       </header>
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <style>
-          .demo-card-wide.mdl-card {
+          .overview-card-wide.mdl-card {
              width: 1024px;
              <!-- from 512px -->
           }
-          .demo-card-wide > .mdl-card__title {
+          .overview-card-wide > .mdl-card__title {
              color: #fff;
              height: 176px;
-             background: url('http://instinctmagazine.com/sites/instinctmagazine.com/files/images/blog_posts/Adam%20Dupuis/2016/10/24/CN_chicagosunset.jpg') center / cover;
+             background: url('http://www.rinfinance.com/images/1280px-Chicago_Theatre_sign_Close_up.jpg') center / cover;
           }
-          .demo-card-wide > .mdl-card__menu {
+          .overview-card-wide > .mdl-card__menu {
              color: #fff;
           }
           </style>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="overview-card-wide mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
               <h2 class="mdl-card__title-text">Welcome</h2>
             </div>
@@ -279,9 +279,27 @@
         </div>
 
         <div class="mdl-layout__tab-panel" id="cfp">
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div class="mdl-cell mdl-cell--12-col">
-
+                    <style>
+          .demo-card-wide.mdl-card {
+             width: 1024px;
+             <!-- from 512px -->
+          }
+          .demo-card-wide > .mdl-card__title {
+             color: #fff;
+             height: 616px;
+             background: url('http://www.rinfinance.com/images/chicago_bean_large.jpeg') center / cover;
+          }
+          .demo-card-wide > .mdl-card__menu {
+             color: #fff;
+          }
+          </style>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <!-- <h2 class="mdl-card__title-text">Welcome</h2> -->
+            </div>
+            <div class="mdl-card__supporting-text">
+              
               <h4>Call For Papers</h4>
 
               The ninth annual R/Finance conference for applied finance using R will be held on May 19 and 20, 2017 in Chicago, IL, USA at the University of Illinois at Chicago.
@@ -331,6 +349,10 @@
               <div class="row">
                 <h6><a href="http://www.cvent.com/d/bfqpky">Please use this link to go to the CVENT waitlist</a></h6
               </div>
+
+              <!-- <button class="mdc-button mdc-button--raised mdc-button--primary"> -->
+              <!--    <a href="http://www.cvent.com/d/bfqpky">Please use this link</a> -->
+              <!-- </button> -->
 
               The main conference registration fees are listed below.  
               The registration fee includes access to Friday
@@ -402,6 +424,8 @@
               <p></p>
               <em>In previous years, the majority of seminars sold out early!</em> 
               Space for the conference dinner is also limited and expected to sell out early.
+
+              <p></p>
                   
             </div>
           </section>
@@ -422,6 +446,7 @@
         
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
+
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox">
               <h1 class="mdl-mega-footer--heading">Platinum Sponsors</h1>
@@ -431,6 +456,7 @@
                 <li><a href="http://depts.washington.edu/compfin">UW CF&RM</a></li>
               </ul>
             </div>
+
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
               <h1 class="mdl-mega-footer--heading">Gold Sponsors</h1>
@@ -445,6 +471,7 @@
                 <li><a href="https://www.williamblair.com/">William Blair</a></li>
               </ul>
             </div>            
+
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
               <h1 class="mdl-mega-footer--heading">Previous Conferences</h1>
@@ -459,15 +486,28 @@
                 <li><a href="http://www.rinfinance.com/RinFinance2009/presentations">R/Finance 2009</a></li>
               </ul>
             </div>
+
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Committee</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="http://tigger.uic.edu/~gib/">Gib Bassett</a></li>
+                <li>Peter Carl</li>
+                <li><a href="http://dirk.eddelbuettel.com">Dirk Eddelbuettel</a></li>
+                <li><a href="http://braverock.com/brian/">Brian Peterson</a></li>
+                <li><a href="http://tigger.uic.edu/~daler/">Dale Rosenthal</a></li>
+                <li><a href="http://www.lemnica.com">Jeffrey Ryan</a></li>
+                <li><a href="http://www.fosstrading.com">Josh Ulrich</a></li>
+              </ul>
+            </div>
           </div>
+          
           <div class="mdl-mega-footer--bottom-section">
             <div class="mdl-logo">
               Crafted using 
             </div>
             <ul class="mdl-mega-footer--link-list">
               <li><a href="https://getmdl.io/">Material Design Lite</a></li>
-              <!-- <li><a href="#">Help</a></li> -->
-              <!-- <li><a href="#">Privacy and Terms</a></li> -->
             </ul>
           </div>
         </footer>
