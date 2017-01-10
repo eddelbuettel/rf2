@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>R/Finance 2013</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dirk Eddelbuettel, Jeff Ryan, R/Finance Conference Committee">
+    <meta name="keywords" content="R r CRAN useR! financial trading quant quants quantitative conference software financial uic university of illinois
+                                   risk-management risk markets technicals portfolio backtesting statistical modelling modeling">
+    <meta name="description" content="R/Finance 2013: Applied Finance with R">
+
+
+    <!-- Le styles -->
+    <link href="http://eddelbuettel.github.com/tb/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="http://eddelbuettel.github.com/tb/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://eddelbuettel.github.com/tb/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://eddelbuettel.github.com/tb/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://eddelbuettel.github.com/tb/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://eddelbuettel.github.com/tb/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- R/Finance CSS definitions, "2013 edition" without width etc  -->
+    <link rel="stylesheet" type="text/css" href="http://eddelbuettel.github.com/rf/css/style.2013.css">
+
+  </head> 
+
+  <body>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16698261-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">R/Finance</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+	      <li class="active"><a href="/">home</a></li>
+	      <!-- <li><a href="/cfp/">cfp</a></li> -->
+	      <li><a href="/RinFinance2013/agenda">agenda</a></li>
+	      <li><a href="/RinFinance2013/register">register</a></li>
+	      <li><a href="/RinFinance2013//travel">travel</a></li>
+	      <li><a href="/RinFinance2013//committee">committee</a></li>
+	      <!-- <li><a href="/sponsors">sponsors</a></li> -->
+            </ul>
+            <ul class="nav pull-right">
+	      <li class="dropdown">
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">previous<b class="caret"></b></a>
+	        <ul class="dropdown-menu">
+		  <li><a href="/RinFinance2009/presentations">R/Finance 2009</a></li>
+		  <li><a href="/RinFinance2010/agenda/">R/Finance 2010</a></li>
+		  <li><a href="/RinFinance2011/agenda/">R/Finance 2011</a></li>
+		  <li><a href="/RinFinance2012/agenda/">R/Finance 2012</a></li>
+	        </ul>
+	      </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div>
+        <h1 style="color: #039; font-weight: bold;">R/Finance 2013: Applied Finance with R</h1>
+	<h3 style="color: #555">May 17 &amp; 18, Chicago, IL, USA</h3>
+
+	<!-- edd 16 Dec 2012:  It would appear that container-class "fluid" imposes one column each on the sides leaving 10. True? False? -->
+	<!-- edd 16 Dec 2012:  width="..." in _percentages_ rocks as it scales to the current 'cell' -->
+
+        <div class="btn-toolbar"> </div>	<!-- just to add vertical spacing-->
+	
+        <div class="row">
+	  <div class="span8 offset3">
+            <a href="http://business.uic.edu/academic-centers-and-research/cba-research-centers/international-center-for-futures-and-derivatives">
+	      <img src="http://eddelbuettel.github.com/rf/logos/2012/UIC_ICFD.png" alt="UIC ICFD" width="70%">
+	    </a>
+	  </div>
+	</div>
+	
+        <div class="row">
+	  <div class="span5 offset1">
+	    <a href="http://www.revolutionanalytics.com">
+	      <img src="http://eddelbuettel.github.com/rf/logos/2012/Revo.gif" alt="Revolution Analytics" width="85%">
+            </a>
+	  </div>
+	  <div class="span5 offset1">
+	    <a href="http://computational-finance.uw.edu/?utm_source=R%2BFinance&utm_medium=banner&utm_campaign=R%2BFinance%2BBanner%2BAds">
+	    <img src="http://eddelbuettel.github.com/rf/logos/2012/UofWashington.png" alt="University of Washington" width="85%"></a>
+          </div>
+	</div>
+
+        <div class="row">
+	  <div class="span2 offset1">
+	    <a href="http://www.google.com"><img src="http://eddelbuettel.github.com/rf/logos/2012/Google.png" alt="Google" width="95%"></a>
+	  </div>
+	  <div class="span2">
+	    <a href="http://www.lemnica.com"><img src="http://eddelbuettel.github.com/rf/logos/2012/lemnica.png" alt="lemnica" width="95%"></a>
+	  </div>
+	  <div class="span2">
+	    <a href="http://www.opengamma.com">
+	      <img src="http://eddelbuettel.github.com/rf/logos/2012/OpenGamma.jpeg" alt="OpenGamma" width="95%" vspace="10%">
+	    </a>
+	  </div>
+	  <div class="span2">
+	    <a href="http://www.onetick.com"><img src="http://eddelbuettel.github.com/rf/logos/2012/OneTick.png" alt="OneTick" width="95%" vspace="10%"</a>
+	  </div>
+	  <div class="span2">
+	    <a href="http://www.rstudio.org"><img src="http://eddelbuettel.github.com/rf/logos/2012/RStudio.png" alt="RStudio" width="95%" vspace="5%"></a> 
+	  </div>
+	  <!-- <div class="span2"> -->
+	  <!--   <a href="http://www.tickdata.com">
+	  <!--     <img src="http://eddelbuettel.github.com/rf/logos/2012/TickData.jpeg" alt="TickData" width="95%" vspace="10%"></a>  -->
+	  <!-- </div> -->
+	</div>
+	
+      </div>
+
+      <div class="btn-toolbar"> </div>	<!-- just to add vertical spacing-->
+
+      <p></p>
+      <div class="container">
+        <div class="row">
+          <div class="span6 offset3">
+	    <div id="center"> <a style="color: #039" href="/register"><h2>Registration is now open!</h2></a></div>
+	  </div>
+        </div>
+      </div>
+      <p></p>
+      
+      <div class="row">
+        <div class="span6">
+	  <div id="page_title"> &gt; home(2013) </div>
+	  <p>
+	    The fifth annual R/Finance conference for applied finance using
+	    <a class="R" href="http://www.r-project.org" target="_blank">R</a>, the
+	    premier free software system for statistical computation and graphics,
+	    <!-- will be held this spring in Chicago, IL, USA on <b>Friday May 17 and -->
+	    was held in Chicago, IL, USA on <b>Friday May 17 and
+	    <!-- Saturday May 18, 2013</b>. The two-day conference will cover portfolio -->
+	    Saturday May 18, 2013</b>. The two-day conference covered portfolio
+	    management, time series analysis, advanced risk tools,
+	    <!-- high-performance computing, econometrics and more. All will be -->
+	    high-performance computing, econometrics and more. All was be
+	    discussed within the context of using <b>R</b> as a primary tool
+	    for financial risk management, analysis and
+	    trading.
+	    <!-- Registration will open shortly. -->
+	  </p>
+	  <p>
+	    Over the past five years, R/Finance has included attendees from around the world. It featured presentations from prominent
+	    academics and practitioners, and we had another exciting line-up for 2013.
+	  </p>
+	  <p>
+	    For next year, we will invite you to submit complete papers in pdf format for consideration. We will also consider one-page abstracts (in txt or pdf
+	    format) although more complete papers are preferred.  We welcome submissions for full talks and abbreviated "lightning talks". Both
+            academic and practitioner proposals related to R are encouraged.  
+	  </p>
+	  <p>
+	    Presenters are strongly encouraged to provide working R code to accompany the presentation/paper.  Data sets should also be made
+            public for the purposes of reproducibility (though we realize this may be limited due to contracts with data vendors). Preference
+            may be given to presenters who have released R packages.  
+	  </p>
+	  <p>
+	    The conference will award two (or more) $1000 prizes for best papers. A
+            submission must be a full paper to be eligible for a best paper
+	    award. Extended abstracts, even if a full paper is provided by conference time,
+            are not eligible for a best paper award. Financial assistance for travel and
+            accommodation may be available to presenters at the discretion of the conference
+            committee. Requests for assistance should be made at the time of submission.  
+          </p>
+	  <!-- <p> -->
+	  <!--   Please send submissions to: committee <em>at</em> RinFinance.com. -->
+          <!-- <p> -->
+	  <!--   The submission deadline was February 15, 2013. Submitters have been notified of -->
+	  <!--   acceptance via email by February 28, 2013. Notification of whether a -->
+	  <!--   presentation will be a long presentation or a lightning talk will also be made -->
+	  <!--   at that time. -->
+          <!-- </p> -->
+          <p>
+            The <a href="/agenda" >conference program</a> is now available.
+            <!-- and <a href="/register" >registration is open</a>. -->
+          </p>
+        </div>
+
+	<div class="span6">
+	   <div class="btn-toolbar"> </div>	<!-- just to add vertical spacing-->
+           <div id="keynote">
+	     <p>
+	       The 2013 conference built upon the success of the four previous
+	       events. We are excited to confirm the following list of confirmed
+  	       keynote lectures for R/Finance 2013:
+	     <dl>
+	       <dt>Sanjiv Das</dt>
+	       <dd>Santa Clara University; Author of <em>Derivatives: Principles and Practice</em>; </dd>
+	       <dt>Attilio Meucci</dt>
+	       <dd>Chief Risk Officer at Kepos Capital, LP; Author of <em>Risk and Asset Allocation</em></dd>
+	       <dt>Ryan Sheftel</dt>
+	       <dd>Managing Director for Electronic Market Making at Credit Suisse</dd>
+	       <dt>Ruey Tsay</dt>
+	       <dd>University of Chicago; Author of <em>An Introduction to Analysis of Financial Data with R</em>
+	       </dd>	   
+	     </dl>
+	     </p>
+	     
+	     <!-- <div id="keynotelist"> -->
+	     <!--   <ul> -->
+	     <!--     <li>Blair Hull,</li> -->
+	     <!--     <li>Paul Gilbert,</li> -->
+	     <!--     <li>Rob McCulloch and</li> -->
+	     <!--     <li>Simon Urbanek.</li> -->
+	     <!--   </ul> -->
+	     <!-- </div> -->
+
+	    <!-- plus presentations of contributed papers, -->
+	    <!-- short "lightning-style" presentations, and optional -->
+	    <!-- pre-conference tutorials. It also presents a unique opportunity to meet -->
+	    <!-- fellow R users and developers, and a thus provides a chance to discuss -->
+	    <!-- the future of R in Finance.  -->
+	    </p>
+
+	    <p>
+	    The inaugural 2009 conference featured keynotes by Patrick Burns, Robert
+	    Grossman, David Kane, Roger Koenker, David Ruppert, 
+	    Diethelm Wuertz, and Eric Zivot, as well as a number of excellent
+	    presentations. <!-- by Yohan Chalabi, Hedibert Lopes, Krishna Kumar, Christoph
+	    Leitner, Wei-han Liu, Bryan Lewis, David Matteson, Klaus Rheinberger, Brian
+	    Rowe, Guy Yollin, and Joon-Hui Yoon.--> 
+	    </p>
+	    <p>
+	    The 2010 conference contained keynotes by Bernhard
+	    Pfaff, Ralph Vince, Marc Wildi, and Achim Zeileis. <!-- complemented by
+	    presentations from Maria Belianina, Kris Boudt, Josh Buckner,
+	    Peter Carl, Jon Cornelissen, Dirk Eddelbuettel, Robert Grossman,
+	    Saptarshi Guha, Mike Kane, Ruud Koning, Bryan Lewis, Wei-han Liu,
+	    James "JD" Long, Brian Peterson, Soren MacBeth, Khanh Nguyen,
+	    Michael North, Stefan Theussl, Josh Ulrich, Tony Plate, Jeff
+	    Ryan, Mark Seligman, David Smith, and Eric Zivot.-->
+	    This was followed in 2011 with keynotes by Meb Faber, Stefano Iacus, John
+	    Bollinger and Louis Kates.
+	    Last year's conference had keynotes from Blair
+	    Hull, Paul Gilbert, Rob McCulloch, and Simon Urbanek.
+	    </p>
+	    <p>
+            Complete programs of the previous conferences, along with
+	    downloadable presentation slides, are available via the links
+	    above.
+	    </p>
+	    <p>
+	    The R/Finance 2013 conference is again organized by a local group of R package
+	    authors and community contributors, and hosted by the International
+	    Center for Futures and Derivatives [ICFD] at the University of
+	    Illinois at Chicago.  Sponsorship opportunities are available.
+	    <!--
+	    and made possible via sponsorship support
+	    from ICFD, REvolution Computing, OneMarketData and Insight
+	    Algorithmics.
+	    -->
+	    </p>
+
+        </div>
+      </div>
+
+      <div class="btn-toolbar"> </div>	<!-- just to add vertical spacing-->
+
+    </div> <!-- /container -->
+
+    <hr>
+      
+    <div class="container">
+      <div class="row">
+	<div class="span12" align="center">
+	  <div id="footer">
+	    <p>
+	      <script type="text/javascript">
+	      <!--
+	      google_ad_client = "pub-6407993940509532";
+	      /* 728x90 created 2010-05-31 */
+	      google_ad_slot = "9296476119";
+	      google_ad_width = 728;
+	      google_ad_height = 90;
+	      //-->
+              </script>
+	      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script>
+	  </div>
+	</div>
+      </div>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://eddelbuettel.github.com/tb/jquery/jquery.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-transition.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-alert.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-modal.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-dropdown.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-scrollspy.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-tab.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-tooltip.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-popover.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-button.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-collapse.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-carousel.js"></script>
+    <script src="http://eddelbuettel.github.com/tb/js/bootstrap-typeahead.js"></script>
+    
+  </body>
+</html>
