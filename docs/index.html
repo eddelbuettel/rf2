@@ -653,5 +653,15 @@
       </main>
     </div>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script>
+window.onload = function () {
+    // determine text after hashtag (e.g. 'cfp')
+    var afterHastag = window.location.href.match('[^#]*$');
+    if (afterHastag.index != 0) {
+        // click link with assoc. href (e.g. '#cfp')
+        document.querySelector("a[href='#" + afterHastag + "']").click();
+    }
+}
+    </script>
   </body>
 </html>
